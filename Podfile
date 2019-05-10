@@ -11,4 +11,6 @@ target 'login api' do
     pod 'RealmSwift', '~> 3.7.1'
     pod 'SwiftyJSON', '~> 4.1.0'
     pod 'Alamofire', '~> 4.7.2'
+    pod 'SAMKeychain'
+    pod 'PKHUD'
 end

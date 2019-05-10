@@ -12,6 +12,19 @@
 		151D4ADB22816161008DBB83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151D4ADA22816161008DBB83 /* Assets.xcassets */; };
 		151D4ADE22816161008DBB83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151D4ADC22816161008DBB83 /* LaunchScreen.storyboard */; };
 		151D4AE7228169F2008DBB83 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151D4AE6228169F2008DBB83 /* LoginController.swift */; };
+		1559CC79228288F300F83D82 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC78228288F300F83D82 /* UserInteractor.swift */; };
+		1559CC7C2282893A00F83D82 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC7B2282893A00F83D82 /* BaseInteractor.swift */; };
+		1559CC7F228289BB00F83D82 /* APIConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC7E228289BB00F83D82 /* APIConnector.swift */; };
+		1559CC8122828BA500F83D82 /* LocaleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC8022828BA500F83D82 /* LocaleManager.swift */; };
+		1559CC8322828C6A00F83D82 /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC8222828C6A00F83D82 /* PreferenceManager.swift */; };
+		1559CC852282AB7E00F83D82 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC842282AB7E00F83D82 /* Config.swift */; };
+		1559CC872282AC5F00F83D82 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC862282AC5F00F83D82 /* DeviceManager.swift */; };
+		1559CC892282B6DE00F83D82 /* NSStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC882282B6DE00F83D82 /* NSStringExtension.swift */; };
+		1559CC8C2282B97600F83D82 /* GenflixErrorCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC8B2282B97600F83D82 /* GenflixErrorCode.swift */; };
+		1559CC8E2282BA3A00F83D82 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC8D2282BA3A00F83D82 /* User.swift */; };
+		157D6E1022851C8100A0FEE8 /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D6E0F22851C8100A0FEE8 /* MainMenuController.swift */; };
+		157D6E12228521F000A0FEE8 /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D6E11228521F000A0FEE8 /* StoryboardManager.swift */; };
+		15EB618C2283C1960091CCD9 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EB618B2283C1960091CCD9 /* RequestExtension.swift */; };
 		76FEEDDA8E025617BBC7C5BE /* Pods_login_api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1198B85CF15CD7924827BD4E /* Pods_login_api.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +37,19 @@
 		151D4ADD22816161008DBB83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		151D4ADF22816161008DBB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151D4AE6228169F2008DBB83 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1559CC78228288F300F83D82 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
+		1559CC7B2282893A00F83D82 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
+		1559CC7E228289BB00F83D82 /* APIConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnector.swift; sourceTree = "<group>"; };
+		1559CC8022828BA500F83D82 /* LocaleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleManager.swift; sourceTree = "<group>"; };
+		1559CC8222828C6A00F83D82 /* PreferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
+		1559CC842282AB7E00F83D82 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		1559CC862282AC5F00F83D82 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
+		1559CC882282B6DE00F83D82 /* NSStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSStringExtension.swift; sourceTree = "<group>"; };
+		1559CC8B2282B97600F83D82 /* GenflixErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenflixErrorCode.swift; sourceTree = "<group>"; };
+		1559CC8D2282BA3A00F83D82 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		157D6E0F22851C8100A0FEE8 /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
+		157D6E11228521F000A0FEE8 /* StoryboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardManager.swift; sourceTree = "<group>"; };
+		15EB618B2283C1960091CCD9 /* RequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
 		79361D5C412165EDDECB5009 /* Pods-login api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login api.release.xcconfig"; path = "Target Support Files/Pods-login api/Pods-login api.release.xcconfig"; sourceTree = "<group>"; };
 		CBCDB256332F89DA08C2F9CB /* Pods-login api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login api.debug.xcconfig"; path = "Target Support Files/Pods-login api/Pods-login api.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,7 +87,12 @@
 		151D4AD22281615F008DBB83 /* login api */ = {
 			isa = PBXGroup;
 			children = (
-				151D4AE5228169D9008DBB83 /* controller */,
+				15EB618D2283C6890091CCD9 /* Extends */,
+				1559CC8A2282B96100F83D82 /* Model */,
+				1559CC7D228289A400F83D82 /* Helpers */,
+				1559CC7A2282892400F83D82 /* Base */,
+				1559CC77228288CD00F83D82 /* Interactors */,
+				151D4AE5228169D9008DBB83 /* Controller */,
 				151D4AD32281615F008DBB83 /* AppDelegate.swift */,
 				151D4AD72281615F008DBB83 /* Main.storyboard */,
 				151D4ADA22816161008DBB83 /* Assets.xcassets */,
@@ -71,12 +102,60 @@
 			path = "login api";
 			sourceTree = "<group>";
 		};
-		151D4AE5228169D9008DBB83 /* controller */ = {
+		151D4AE5228169D9008DBB83 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				151D4AE6228169F2008DBB83 /* LoginController.swift */,
+				157D6E0F22851C8100A0FEE8 /* MainMenuController.swift */,
 			);
-			path = controller;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1559CC77228288CD00F83D82 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				1559CC78228288F300F83D82 /* UserInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		1559CC7A2282892400F83D82 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1559CC7B2282893A00F83D82 /* BaseInteractor.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		1559CC7D228289A400F83D82 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1559CC8B2282B97600F83D82 /* GenflixErrorCode.swift */,
+				1559CC7E228289BB00F83D82 /* APIConnector.swift */,
+				1559CC8022828BA500F83D82 /* LocaleManager.swift */,
+				1559CC8222828C6A00F83D82 /* PreferenceManager.swift */,
+				1559CC842282AB7E00F83D82 /* Config.swift */,
+				1559CC862282AC5F00F83D82 /* DeviceManager.swift */,
+				157D6E11228521F000A0FEE8 /* StoryboardManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1559CC8A2282B96100F83D82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1559CC8D2282BA3A00F83D82 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		15EB618D2283C6890091CCD9 /* Extends */ = {
+			isa = PBXGroup;
+			children = (
+				1559CC882282B6DE00F83D82 /* NSStringExtension.swift */,
+				15EB618B2283C1960091CCD9 /* RequestExtension.swift */,
+			);
+			path = Extends;
 			sourceTree = "<group>";
 		};
 		61E673D27B9D1A5941698E70 /* Frameworks */ = {
@@ -197,10 +276,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-login api/Pods-login api-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -208,10 +289,12 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,8 +309,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1559CC7F228289BB00F83D82 /* APIConnector.swift in Sources */,
+				1559CC8322828C6A00F83D82 /* PreferenceManager.swift in Sources */,
 				151D4AE7228169F2008DBB83 /* LoginController.swift in Sources */,
+				1559CC8C2282B97600F83D82 /* GenflixErrorCode.swift in Sources */,
+				1559CC892282B6DE00F83D82 /* NSStringExtension.swift in Sources */,
+				157D6E1022851C8100A0FEE8 /* MainMenuController.swift in Sources */,
+				1559CC7C2282893A00F83D82 /* BaseInteractor.swift in Sources */,
+				1559CC8122828BA500F83D82 /* LocaleManager.swift in Sources */,
+				1559CC852282AB7E00F83D82 /* Config.swift in Sources */,
+				1559CC8E2282BA3A00F83D82 /* User.swift in Sources */,
+				1559CC79228288F300F83D82 /* UserInteractor.swift in Sources */,
+				1559CC872282AC5F00F83D82 /* DeviceManager.swift in Sources */,
 				151D4AD42281615F008DBB83 /* AppDelegate.swift in Sources */,
+				15EB618C2283C1960091CCD9 /* RequestExtension.swift in Sources */,
+				157D6E12228521F000A0FEE8 /* StoryboardManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

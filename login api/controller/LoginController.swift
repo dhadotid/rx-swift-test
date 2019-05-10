@@ -9,14 +9,14 @@
 import Foundation
 import RxSwift
 import RxCocoa
-import UIKit
+import PKHUD
 
 class LoginController : UIViewController {
     
     @IBOutlet weak var txtEmail: UITextField!
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
-    
+    let interactor = UserInteractor()
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -46,8 +46,41 @@ class LoginController : UIViewController {
                     return true
                 }
             }
-            .bind{ (email, password) in
-                print("email: " + email! + "\npassword: "+password!)
-            }.disposed(by: disposeBag)
+            .flatMap{ (arg) -> Observable<User> in
+                let (email, password) = arg
+                return self.interactor.signIn(email: email!, password: password!)
+            }
+            .do( onNext: { user in
+                if let fullname = user.user_id {
+                    print("Masuk")
+                    
+                    var j = fullname
+                    if let n = user.full_name {
+                        j = n
+                    }
+                    print(j)
+                    HUD.flash(.success, delay: 2)
+                    
+                    let controller = MainMenuController.instantiateNav()
+                    self.present(controller, animated: true, completion: nil)
+                }
+            }, onError: { errorType in
+                let error = errorType as NSError
+                print("error : \(error.localizedDescription)")
+                HUD.flash(.error, delay: 2)
+                
+            })
+        .retry()
+        .subscribe()
+        .disposed(by: disposeBag)
+//            .bind{ (email, password) in
+//                print("email: " + email! + "\npassword: "+password!)
+//
+//                let alert = UIAlertController(title: "Output", message: "Email: " + email! + "\nPassword: " + password!, preferredStyle: UIAlertController.Style.alert)
+//                alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { action in
+//                    print("This is OK Button Action")
+//                }))
+//                self.present(alert, animated: true)
+//            }.disposed(by: disposeBag)
     }
 }
