@@ -74,12 +74,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HAHAHAHA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P5-w1-PUf">
-                                        <rect key="frame" x="59" y="211" width="275" height="21"/>
+                                        <rect key="frame" x="8" y="72" width="275" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHP-F3-PwL">
+                                        <rect key="frame" x="8" y="101" width="48" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Logout"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -89,6 +94,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="SQz-pM-kut"/>
                     <connections>
+                        <outlet property="btnLogout" destination="HHP-F3-PwL" id="LdB-wV-2k0"/>
                         <outlet property="lblText" destination="2P5-w1-PUf" id="Hub-Jd-ciR"/>
                     </connections>
                 </viewController>
