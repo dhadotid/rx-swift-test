@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLj-6K-ONN">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLj-6K-ONN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--Login Controller Scene-->
         <scene sceneID="VLf-XY-pD9">
             <objects>
-                <viewController title="Login Controller Scene" id="aLj-6K-ONN" customClass="LoginController" customModule="login_api" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginStoryBoard" title="Login Controller Scene" id="aLj-6K-ONN" customClass="LoginController" customModule="login_api" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CY9-fI-Xmc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,6 +50,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UOq-Ar-sVf"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vpo-QJ-8P4"/>
                     <connections>
                         <outlet property="btnLogin" destination="LRX-8S-Mnx" id="J4r-28-Zm3"/>
                         <outlet property="txtEmail" destination="64k-8P-A0G" id="fb7-zH-RYQ"/>
@@ -58,7 +59,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cyt-cv-a5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="324" y="84.107946026986511"/>
+            <point key="canvasLocation" x="1289" y="753"/>
         </scene>
         <!--Detail Akun Controller Scene-->
         <scene sceneID="Yxk-Kb-WKD">
