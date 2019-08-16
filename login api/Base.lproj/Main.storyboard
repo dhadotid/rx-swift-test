@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aLj-6K-ONN">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,23 +15,23 @@
             <objects>
                 <viewController storyboardIdentifier="LoginStoryBoard" title="Login Controller Scene" id="aLj-6K-ONN" customClass="LoginController" customModule="login_api" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CY9-fI-Xmc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="64k-8P-A0G" userLabel="Txt Email">
-                                <rect key="frame" x="10" y="30" width="355" height="30"/>
+                                <rect key="frame" x="10" y="30" width="394" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="auZ-Hs-O1P" userLabel="Txt Password">
-                                <rect key="frame" x="10" y="68" width="355" height="30"/>
+                                <rect key="frame" x="10" y="68" width="394" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRX-8S-Mnx" userLabel="Btn Login">
-                                <rect key="frame" x="141" y="108" width="93" height="30"/>
+                                <rect key="frame" x="141" y="108" width="132" height="30"/>
                                 <state key="normal" title="Login"/>
                             </button>
                         </subviews>
@@ -59,42 +59,80 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cyt-cv-a5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1289" y="753"/>
+            <point key="canvasLocation" x="577" y="567"/>
+        </scene>
+        <!--Sample Table View Controller-->
+        <scene sceneID="vYb-HZ-2lh">
+            <objects>
+                <viewController storyboardIdentifier="SampleTableStoryBoard" id="2HO-vL-OVj" userLabel="Sample Table View Controller" customClass="SimpleTableViewController" customModule="login_api" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lTQ-ZG-BBg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c8C-pz-OnO">
+                                <rect key="frame" x="20" y="20" width="374" height="716"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="2HO-vL-OVj" id="oGR-a8-Sgc"/>
+                                    <outlet property="delegate" destination="2HO-vL-OVj" id="2G1-3h-p6O"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Yrn-Db-nFX" firstAttribute="trailing" secondItem="c8C-pz-OnO" secondAttribute="trailing" constant="20" id="0OL-FG-phF"/>
+                            <constraint firstItem="Yrn-Db-nFX" firstAttribute="bottom" secondItem="c8C-pz-OnO" secondAttribute="bottom" id="NkW-UC-OFl"/>
+                            <constraint firstItem="c8C-pz-OnO" firstAttribute="top" secondItem="Yrn-Db-nFX" secondAttribute="top" id="TYu-O9-8cF"/>
+                            <constraint firstItem="c8C-pz-OnO" firstAttribute="leading" secondItem="Yrn-Db-nFX" secondAttribute="leading" constant="20" id="zYX-YO-WSa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yrn-Db-nFX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="f1A-vx-Lyr"/>
+                    <connections>
+                        <outlet property="tableView" destination="c8C-pz-OnO" id="hOj-6L-qj2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JzO-M0-Bg1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2037.5999999999999" y="756.97151424287858"/>
         </scene>
         <!--Detail Akun Controller Scene-->
         <scene sceneID="Yxk-Kb-WKD">
             <objects>
                 <viewController title="Detail Akun Controller Scene" id="OMv-r4-Smk" customClass="MainMenuController" customModule="login_api" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZcD-DK-1ri">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DMf-6J-R4i">
-                                <rect key="frame" x="-4" y="0.0" width="379" height="667"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHP-F3-PwL">
+                                <rect key="frame" x="346" y="686" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HAHAHAHA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P5-w1-PUf">
+                                <rect key="frame" x="19.999999999999993" y="64" width="93.333333333333314" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX8-Gm-cgM">
+                                <rect key="frame" x="20" y="117" width="125" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HAHAHAHA" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P5-w1-PUf">
-                                        <rect key="frame" x="8" y="72" width="275" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHP-F3-PwL">
-                                        <rect key="frame" x="8" y="101" width="48" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Logout"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
+                                <state key="normal" title="Simple Table View"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nMe-sc-bo0" firstAttribute="bottom" secondItem="HHP-F3-PwL" secondAttribute="bottom" constant="20" id="2v0-uq-Gfo"/>
+                            <constraint firstItem="2P5-w1-PUf" firstAttribute="top" secondItem="nMe-sc-bo0" secondAttribute="top" id="Tx9-zV-Kgh"/>
+                            <constraint firstItem="nMe-sc-bo0" firstAttribute="trailing" secondItem="HHP-F3-PwL" secondAttribute="trailing" constant="20" id="WXg-v8-U9E"/>
+                            <constraint firstItem="2P5-w1-PUf" firstAttribute="leading" secondItem="nMe-sc-bo0" secondAttribute="leading" constant="20" id="Zpc-tZ-kJd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="nMe-sc-bo0"/>
                     </view>
                     <navigationItem key="navigationItem" id="SQz-pM-kut"/>
                     <connections>
                         <outlet property="btnLogout" destination="HHP-F3-PwL" id="LdB-wV-2k0"/>
+                        <outlet property="btnSampleTableView" destination="PX8-Gm-cgM" id="PVB-Gq-0SE"/>
                         <outlet property="lblText" destination="2P5-w1-PUf" id="Hub-Jd-ciR"/>
                     </connections>
                 </viewController>
@@ -107,7 +145,7 @@
             <objects>
                 <navigationController storyboardIdentifier="DetailAkunNav" automaticallyAdjustsScrollViewInsets="NO" id="5g3-jQ-EmZ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pCj-5m-d5r">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>

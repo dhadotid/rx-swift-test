@@ -12,6 +12,9 @@
 		151D4ADB22816161008DBB83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151D4ADA22816161008DBB83 /* Assets.xcassets */; };
 		151D4ADE22816161008DBB83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151D4ADC22816161008DBB83 /* LaunchScreen.storyboard */; };
 		151D4AE7228169F2008DBB83 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151D4AE6228169F2008DBB83 /* LoginController.swift */; };
+		1537F9782305337D0011CCF8 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1537F9772305337D0011CCF8 /* Device.swift */; };
+		1537F97E230534F70011CCF8 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1537F97D230534F70011CCF8 /* CGFloat.swift */; };
+		154AB3FA23065729001AA29D /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154AB3F923065729001AA29D /* UIAlertController.swift */; };
 		1559CC79228288F300F83D82 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC78228288F300F83D82 /* UserInteractor.swift */; };
 		1559CC7C2282893A00F83D82 /* BaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC7B2282893A00F83D82 /* BaseInteractor.swift */; };
 		1559CC7F228289BB00F83D82 /* APIConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC7E228289BB00F83D82 /* APIConnector.swift */; };
@@ -24,6 +27,7 @@
 		1559CC8E2282BA3A00F83D82 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559CC8D2282BA3A00F83D82 /* User.swift */; };
 		157D6E1022851C8100A0FEE8 /* MainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D6E0F22851C8100A0FEE8 /* MainMenuController.swift */; };
 		157D6E12228521F000A0FEE8 /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157D6E11228521F000A0FEE8 /* StoryboardManager.swift */; };
+		15D047F42304141600FDE761 /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D047F32304141600FDE761 /* SimpleTableViewController.swift */; };
 		15EB618C2283C1960091CCD9 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EB618B2283C1960091CCD9 /* RequestExtension.swift */; };
 		76FEEDDA8E025617BBC7C5BE /* Pods_login_api.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1198B85CF15CD7924827BD4E /* Pods_login_api.framework */; };
 /* End PBXBuildFile section */
@@ -37,6 +41,9 @@
 		151D4ADD22816161008DBB83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		151D4ADF22816161008DBB83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151D4AE6228169F2008DBB83 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		1537F9772305337D0011CCF8 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		1537F97D230534F70011CCF8 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		154AB3F923065729001AA29D /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 		1559CC78228288F300F83D82 /* UserInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
 		1559CC7B2282893A00F83D82 /* BaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseInteractor.swift; sourceTree = "<group>"; };
 		1559CC7E228289BB00F83D82 /* APIConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnector.swift; sourceTree = "<group>"; };
@@ -49,6 +56,7 @@
 		1559CC8D2282BA3A00F83D82 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		157D6E0F22851C8100A0FEE8 /* MainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuController.swift; sourceTree = "<group>"; };
 		157D6E11228521F000A0FEE8 /* StoryboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardManager.swift; sourceTree = "<group>"; };
+		15D047F32304141600FDE761 /* SimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SimpleTableViewController.swift; path = "login api/controller/SimpleTableViewController.swift"; sourceTree = SOURCE_ROOT; };
 		15EB618B2283C1960091CCD9 /* RequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
 		79361D5C412165EDDECB5009 /* Pods-login api.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login api.release.xcconfig"; path = "Target Support Files/Pods-login api/Pods-login api.release.xcconfig"; sourceTree = "<group>"; };
 		CBCDB256332F89DA08C2F9CB /* Pods-login api.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login api.debug.xcconfig"; path = "Target Support Files/Pods-login api/Pods-login api.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +115,7 @@
 			children = (
 				151D4AE6228169F2008DBB83 /* LoginController.swift */,
 				157D6E0F22851C8100A0FEE8 /* MainMenuController.swift */,
+				15D047F32304141600FDE761 /* SimpleTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -137,6 +146,7 @@
 				1559CC842282AB7E00F83D82 /* Config.swift */,
 				1559CC862282AC5F00F83D82 /* DeviceManager.swift */,
 				157D6E11228521F000A0FEE8 /* StoryboardManager.swift */,
+				1537F9772305337D0011CCF8 /* Device.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -154,6 +164,8 @@
 			children = (
 				1559CC882282B6DE00F83D82 /* NSStringExtension.swift */,
 				15EB618B2283C1960091CCD9 /* RequestExtension.swift */,
+				1537F97D230534F70011CCF8 /* CGFloat.swift */,
+				154AB3F923065729001AA29D /* UIAlertController.swift */,
 			);
 			path = Extends;
 			sourceTree = "<group>";
@@ -309,10 +321,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1537F97E230534F70011CCF8 /* CGFloat.swift in Sources */,
 				1559CC7F228289BB00F83D82 /* APIConnector.swift in Sources */,
 				1559CC8322828C6A00F83D82 /* PreferenceManager.swift in Sources */,
 				151D4AE7228169F2008DBB83 /* LoginController.swift in Sources */,
+				1537F9782305337D0011CCF8 /* Device.swift in Sources */,
 				1559CC8C2282B97600F83D82 /* GenflixErrorCode.swift in Sources */,
+				154AB3FA23065729001AA29D /* UIAlertController.swift in Sources */,
 				1559CC892282B6DE00F83D82 /* NSStringExtension.swift in Sources */,
 				157D6E1022851C8100A0FEE8 /* MainMenuController.swift in Sources */,
 				1559CC7C2282893A00F83D82 /* BaseInteractor.swift in Sources */,
@@ -322,6 +337,7 @@
 				1559CC79228288F300F83D82 /* UserInteractor.swift in Sources */,
 				1559CC872282AC5F00F83D82 /* DeviceManager.swift in Sources */,
 				151D4AD42281615F008DBB83 /* AppDelegate.swift in Sources */,
+				15D047F42304141600FDE761 /* SimpleTableViewController.swift in Sources */,
 				15EB618C2283C1960091CCD9 /* RequestExtension.swift in Sources */,
 				157D6E12228521F000A0FEE8 /* StoryboardManager.swift in Sources */,
 			);
